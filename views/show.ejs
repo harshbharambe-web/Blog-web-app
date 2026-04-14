@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= posts.username %>'s Post</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/posts">Stories That Shape Our World</a>
+    <ul class="nav-links">
+      <li><a href="/posts">Feed</a></li>
+      <li><a href="/posts/new">New Post</a></li>
+      <li class="dropdown">
+        <a href="#">Account ▾</a>
+        <div class="dropdown-menu">
+          <a href="/login">Login</a>
+          <a href="#">Profile</a>
+          <a href="#">Settings</a>
+          <a href="#">Sign Out</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="page">
+    <div class="show-card">
+      <span class="author-tag">@ <%= posts.username %></span>
+      <h1><%= posts.content %></h1>
+      <div class="meta">Post ID: <%= posts.id %></div>
+
+      <div class="show-actions">
+        <a href="/posts/<%= posts.id %>/edit" class="btn btn-outline">✏️ Edit</a>
+        <a href="/posts" class="btn btn-ghost">← Back to Feed</a>
+
+        <form method="POST" action="/posts/<%= posts.id %>?_method=DELETE" style="margin:0;">
+          <button type="submit" class="btn btn-danger">🗑 Delete</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
