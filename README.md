@@ -5,6 +5,7 @@ A full-stack blog application built using the MERN stack (MongoDB, Express.js, R
 ---
 
 ## 🏠 Home
+<img width="1913" height="937" alt="Website Feed" src="https://github.com/user-attachments/assets/5fbd15fb-04c8-4410-9265-46249de254f7" />
 
 ---
 
@@ -31,9 +32,6 @@ The application follows a **3-layer architecture**:
 - Handles API routes and request processing  
 - Contains business logic for blog management  
 
-### 3️⃣ Database (MongoDB)
-- Stores blog data  
-- Uses Mongoose for schema and data modeling  
 
 ---
 
@@ -54,13 +52,13 @@ The application uses RESTful APIs to manage blog posts.
 
 ### 📌 Endpoints
 
-| Method | Endpoint        | Description            |
-|--------|---------------|------------------------|
-| GET    | /posts        | Retrieve all posts     |
-| GET    | /posts/:id    | Retrieve single post   |
-| POST   | /posts        | Create new post        |
-| PUT    | /posts/:id    | Update existing post   |
-| DELETE | /posts/:id    | Delete post            |
+| Method | Endpoint      | Description           |
+|--------|---------------|-----------------------|
+| GET    | /posts        | Retrieve all posts    |
+| GET    | /posts/:id    | Retrieve single post  |
+| POST   | / posts/new   | Create new post       |
+| PUT    |/posts/:id/edit| Update existing post  |
+| DELETE | /posts/:id    | Delete post           |
 
 ---
 
@@ -86,19 +84,8 @@ The application uses RESTful APIs to manage blog posts.
 - Node.js  
 - Express.js  
 
-### Database
-- MongoDB  
-- Mongoose  
-
-### Frontend
-- React.js  
-- Axios  
-- CSS / Tailwind  
-
 ---
 
-
----
 
 ## 📸 Screenshots
 
@@ -106,8 +93,12 @@ Home | All Blogs | Create Blog | Edit Blog | Delete
 
 <img width="1917" height="928" alt="login" src="https://github.com/user-attachments/assets/cae6c223-a692-4376-9cf3-7fb779d478bd" />
 
-<img width="1913" height="937" alt="Website Feed" src="https://github.com/user-attachments/assets/5fbd15fb-04c8-4410-9265-46249de254f7" />
+
 <img width="1918" height="932" alt="New post" src="https://github.com/user-attachments/assets/ff99b709-dc55-47bb-b4e1-8223ecbce963" />
+
+<img width="1918" height="926" alt="Edit post" src="https://github.com/user-attachments/assets/740e5296-6652-48b0-8c7c-6eb5950d5c45" />
+
+
 
 
 
